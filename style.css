@@ -1,9 +1,15 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .wrapper {
-  max-width: calc(100% - 30px);
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   border: 1px solid black;
   border-radius: 10px;
-  background: url(./부고배경.jpg) no-repeat center center / cover;
+  background: url(./부고배경.jpg) no-repeat center center / 100% 100%;
 }
 
 .header {
@@ -16,11 +22,6 @@
 }
 
 @media (max-width: 700px) {
-  .wrapper {
-    position: relative;
-    background: url(./부고배경.jpg) no-repeat -400px center / cover;
-  }
-
   .header {
     font-size: 12px;
   }
