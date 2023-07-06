@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: calc(100% - 30px);
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: url(./부고배경.jpg) no-repeat center center / cover;
+}
+
+.header {
+  /* border: 1px solid black;
+  border-radius: 10px; */
+  text-align: center;
+}
+
+.mainWrapper {
+  text-align: center;
+  font-size: 36px;
+}
+
+@media (max-width: 370px) {
+  .wrapper {
+    position: relative;
+    background: url(./부고배경.jpg) no-repeat -400px center / cover;
+  }
+
+  .wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .header {
+    font-size: 12px;
+  }
+
+  .mainWrapper {
+    font-size: 19px;
+    margin-bottom: 120px;
+  }
+}
