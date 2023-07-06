@@ -17,13 +17,13 @@
   font-size: 36px;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 500px) {
   .wrapper {
     position: relative;
     background: url(./부고배경.jpg) no-repeat -400px center / cover;
   }
 
-  .wrapper::after {
+  /* .wrapper::after {
     content: '';
     position: absolute;
     top: 0;
@@ -32,7 +32,7 @@
     bottom: 0;
     opacity: 1;
     z-index: -1;
-  }
+  } */
 
   .header {
     font-size: 12px;
