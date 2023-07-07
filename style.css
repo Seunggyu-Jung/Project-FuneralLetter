@@ -7,11 +7,10 @@
 
 .wrapper {
   width: 100%;
-  height: 120%;
-  margin: auto;
-  border: 5px solid black;
+  height: 100%;
+  border: 2px solid black;
   border-radius: 10px;
-  background: url(./부고배경.jpg) no-repeat center center / cover;
+  background-color: #ffff;
   font-family: 'TheJamsil5Bold';
 }
 
@@ -36,10 +35,14 @@ br {
   margin-top: 2em;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  object-fit: cover;
+}
+
 @media (max-width: 700px) {
-  .wrapper {
-    height: 90vh;
-  }
   .header {
     font-size: 12px;
   }
