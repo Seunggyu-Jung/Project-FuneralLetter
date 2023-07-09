@@ -11,12 +11,16 @@ body {
 
 .wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: #ffff;
+  background: url(./부고배경.jpg) no-repeat center center / cover;
   font-family: 'TheJamsil5Bold';
+}
+
+.flower {
+  display: none;
 }
 
 .header {
@@ -47,6 +51,16 @@ img {
 }
 
 @media (max-width: 700px) {
+  .wrapper {
+    height: 100%;
+    background: none;
+    background-color: #ffff;
+  }
+
+  .flower {
+    display: block;
+  }
+
   .header {
     font-size: 12px;
   }
